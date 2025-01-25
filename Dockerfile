@@ -14,7 +14,7 @@ RUN npm ci --omit=dev --omit=optional
 RUN npm update
 
 # Install mediaplex
-RUN npm install mediaplex
+RUN npm install mediaplex express youtube-dl
 RUN npm run register
 
 # Copy the rest of the application code
