@@ -11,6 +11,7 @@ COPY package*.json ./
 
 # Install necessary dependencies only
 RUN npm ci --omit=dev --omit=optional
+RUN npm update
 
 # Install mediaplex
 RUN npm install mediaplex
