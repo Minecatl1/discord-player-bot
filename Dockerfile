@@ -15,6 +15,7 @@ RUN npm update
 
 # Install mediaplex
 RUN npm install mediaplex
+RUN npm run register
 
 # Copy the rest of the application code
 COPY src/ ./src/
