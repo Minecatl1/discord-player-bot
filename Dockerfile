@@ -15,7 +15,8 @@ RUN npm update
 
 # Install stuff
 RUN npm install mediaplex express youtube-dl
-RUN pip install spotipy xbox-api requests
+RUN pip install spotipy xbox-api requests python-dotenv
+
 RUN npm run register
 
 # Copy the rest of the application code
