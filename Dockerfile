@@ -13,8 +13,9 @@ COPY package*.json ./
 RUN npm ci --omit=dev --omit=optional
 RUN npm update
 
-# Install mediaplex
+# Install stuff
 RUN npm install mediaplex express youtube-dl
+RUN pip install spotipy xbox-api requests
 RUN npm run register
 
 # Copy the rest of the application code
